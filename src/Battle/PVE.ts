@@ -24,7 +24,7 @@ class PVE extends Battle {
   }
 
   fight(): number {
-    this._enemy.forEach(enemy => this.fightEnemy(enemy));
+    this._enemy.forEach((enemy) => this.fightEnemy(enemy));
     return this.player.lifePoints > 0 ? 1 : -1;
   }
 }
